@@ -1,0 +1,10 @@
+{
+  "name": "GesturePresenter AI",
+  "description": "AI-powered presentation and reading platform for PowerPoint (.pptx) and Word (.docx) controlled naturally by hand gestures.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

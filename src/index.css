@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@keyframes pptWipe {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0.7;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+@keyframes pptPush {
+  0% {
+    transform: translateX(36px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pptFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pptZoom {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-ppt-wipe {
+  animation: pptWipe 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.animate-ppt-push {
+  animation: pptPush 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-ppt-fade {
+  animation: pptFade 0.35s ease-out forwards;
+}
+
+.animate-ppt-zoom {
+  animation: pptZoom 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
